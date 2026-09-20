@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cyk075gpa5tby"]
+
+[ext_resource type="Texture2D" uid="uid://dwdi22y5qddya" path="res://assets/sprites/tomato.png" id="1_tsxsy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8qpoh"]
+radius = 12.0415945
+
+[node name="Tomato" type="Area2D" unique_id=1246795501]
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1726459035]
+texture = ExtResource("1_tsxsy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1042004023]
+shape = SubResource("CircleShape2D_8qpoh")

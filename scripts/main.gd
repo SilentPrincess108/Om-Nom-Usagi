@@ -1,5 +1,14 @@
 extends Node
 
+var strawberry = preload("res://scenes/strawberry.tscn")
+var pancakes = preload("res://scenes/pancakes.tscn")
+var tomato = preload("res://scenes/tomato.tscn")
+var lettuce = preload("res://scenes/lettuce.tscn")
+var obstacle_types = [tomato, lettuce]
+var collectable_types = [strawberry, pancakes]
+var obstacles: Array
+var collectables: Array
+
 @onready var usagi: CharacterBody2D = $Usagi
 @onready var camera: Camera2D = $Camera2D
 @onready var ground: StaticBody2D = $Ground

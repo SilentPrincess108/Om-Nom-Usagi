@@ -31,5 +31,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("1_ahhtf")
-theme_override_font_sizes/font_size = 50
-text = "Press space to start!"
+theme_override_font_sizes/font_size = 47
+text = "Press space to start!
+Avoid veggies and collect fruit and the sweet stuff!"
+horizontal_alignment = 1

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://yump5tnecb5q"
+path="res://.godot/imported/Chiikawa Pocket Music (Om Nom Fest).mp3-9e98eb54404c411a9bddd609c650c671.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Chiikawa Pocket Music (Om Nom Fest).mp3"
+dest_files=["res://.godot/imported/Chiikawa Pocket Music (Om Nom Fest).mp3-9e98eb54404c411a9bddd609c650c671.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

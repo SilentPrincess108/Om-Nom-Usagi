@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://6thrbhg3osls"]
+
+[ext_resource type="Texture2D" uid="uid://cdlou5lsm7bns" path="res://assets/sprites/pancake.png" id="1_8ri4e"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i4sdr"]
+radius = 11.0
+
+[node name="Pancakes" type="Area2D" unique_id=598911637]
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=457184087]
+texture = ExtResource("1_8ri4e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=205883960]
+position = Vector2(0, 2)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_i4sdr")
