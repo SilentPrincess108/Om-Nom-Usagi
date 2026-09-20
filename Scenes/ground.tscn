@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://djn7234pypaxf"]
+
+[ext_resource type="Texture2D" uid="uid://cbnnxlcvewt7l" path="res://Assets/sprites/ground.png" id="1_688p1"]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=430168915]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=229474205]
+texture = ExtResource("1_688p1")
+centered = false

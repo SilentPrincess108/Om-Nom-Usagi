@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://wm8qdlw3ob40"]
 
+[ext_resource type="PackedScene" uid="uid://8ekwk1mh031m" path="res://Scenes/background.tscn" id="1_8gbba"]
 [ext_resource type="Texture2D" uid="uid://bdu2b2iwijmix" path="res://Assets/sprites/basic_tileset.png" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://beeuwua8swsle" path="res://Scenes/usagi.tscn" id="2_bo1nx"]
 
@@ -37,7 +38,10 @@ sources/0 = SubResource("TileSetAtlasSource_bo1nx")
 
 [node name="Main" type="Node2D" unique_id=129289562]
 
+[node name="Background" parent="." unique_id=1663038355 instance=ExtResource("1_8gbba")]
+
 [node name="TileMap" type="TileMap" parent="." unique_id=643067619]
+visible = false
 scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_i4sdr")
 format = 2
@@ -48,4 +52,4 @@ layer_1/tile_data = PackedInt32Array(1179644, 0, 0, 1245180, 131072, 0, 1310716,
 
 [node name="Usagi" parent="." unique_id=585553492 instance=ExtResource("2_bo1nx")]
 position = Vector2(156.00003, 316)
-scale = Vector2(3, 3)
+scale = Vector2(5, 5)
