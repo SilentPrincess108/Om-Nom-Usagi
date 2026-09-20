@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://bkgqrj53k3141"]
+
+[ext_resource type="Script" uid="uid://dvhr07rdqyqbn" path="res://scripts/title_screen.gd" id="1_mgrm8"]
+[ext_resource type="FontFile" uid="uid://yi7gw2kl5t2v" path="res://assets/fonts/Mansalva-Regular.ttf" id="1_s4lrb"]
+[ext_resource type="Texture2D" uid="uid://bsm05kqqn2r1j" path="res://assets/sprites/fatusagi.jpg" id="2_mgrm8"]
+[ext_resource type="Texture2D" uid="uid://bukcc1ts4x2fb" path="res://assets/sprites/usagichan.jpg" id="3_dc4i4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i4sdr"]
+bg_color = Color(0.99607843, 0.9372549, 0.8, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qpoh"]
+bg_color = Color(0.9933588, 0.72487485, 0.8269296, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.65863353, 0.03698824, 0.41680667, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mgrm8"]
+bg_color = Color(0.99215686, 0.7254902, 0.827451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.65882355, 0.03529412, 0.41568628, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s4lrb"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.65882355, 0.03529412, 0.41568628, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="TitleScreen" type="Node" unique_id=330543745]
+script = ExtResource("1_mgrm8")
+
+[node name="Panel" type="Panel" parent="." unique_id=685173523]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_i4sdr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="." unique_id=1330056427]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -252.5
+offset_top = -189.0
+offset_right = 252.5
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_s4lrb")
+theme_override_font_sizes/font_size = 79
+text = "Om Nom Usagi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="usagiimg1" type="Sprite2D" parent="." unique_id=1779829717]
+position = Vector2(162, 391)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_mgrm8")
+
+[node name="usagiimg2" type="Sprite2D" parent="." unique_id=1923707966]
+position = Vector2(974, 387)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_dc4i4")
+
+[node name="Play" type="Button" parent="." unique_id=980116649]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = 19.0
+offset_right = 69.5
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.99215686, 0.7254902, 0.827451, 1)
+theme_override_colors/font_outline_color = Color(0.65882355, 0.03529412, 0.41568628, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("1_s4lrb")
+theme_override_font_sizes/font_size = 49
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qpoh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mgrm8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_s4lrb")
+text = "PLAY"
+
+[connection signal="button_up" from="Play" to="." method="_on_play_button_up"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

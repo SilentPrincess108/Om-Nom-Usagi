@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://beeuwua8swsle"]
 
 [ext_resource type="Script" uid="uid://ba3gddou2ssng" path="res://scripts/usagi.gd" id="1_v47a4"]
-[ext_resource type="Texture2D" uid="uid://bnbbp0wxvw8w7" path="res://Assets/sprites/usagi_idle.png" id="2_mqe8a"]
+[ext_resource type="Texture2D" uid="uid://bxjf2fvkoganp" path="res://Assets/sprites/usagi_idle.png" id="2_mqe8a"]
+[ext_resource type="AudioStream" uid="uid://cdedc1xludbco" path="res://assets/sfx/jump.wav" id="3_mqe8a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x88r4"]
 atlas = ExtResource("2_mqe8a")
@@ -71,3 +72,6 @@ frame_progress = 0.914899
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=764286497]
 position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_pjonu")
+
+[node name="jump_sfx" type="AudioStreamPlayer2D" parent="." unique_id=82124743]
+stream = ExtResource("3_mqe8a")
