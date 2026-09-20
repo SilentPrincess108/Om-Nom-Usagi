@@ -2,8 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://cbnnxlcvewt7l" path="res://Assets/sprites/ground.png" id="1_688p1"]
 
-[node name="StaticBody2D" type="StaticBody2D" unique_id=430168915]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4sdr"]
+size = Vector2(2303, 87.25)
+
+[node name="Ground" type="StaticBody2D" unique_id=430168915]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=229474205]
 texture = ExtResource("1_688p1")
 centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=150011045]
+position = Vector2(1151.5, 604.625)
+shape = SubResource("RectangleShape2D_i4sdr")
