@@ -7,6 +7,7 @@ radius = 12.0415945
 
 [node name="Tomato" type="Area2D" unique_id=1246795501]
 scale = Vector2(4, 4)
+collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1726459035]
 texture = ExtResource("1_tsxsy")

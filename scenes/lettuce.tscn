@@ -8,6 +8,7 @@ height = 24.41311
 
 [node name="Lettuce" type="Area2D" unique_id=825379598]
 scale = Vector2(4, 4)
+collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=76620761]
 texture = ExtResource("1_75hm2")

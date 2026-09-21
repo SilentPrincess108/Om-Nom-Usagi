@@ -8,6 +8,7 @@ height = 22.0
 
 [node name="Strawberry" type="Area2D" unique_id=1568127133]
 scale = Vector2(4, 4)
+collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2133829864]
 texture = ExtResource("1_13m7n")

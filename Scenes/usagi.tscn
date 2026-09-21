@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://beeuwua8swsle"]
 
 [ext_resource type="Script" uid="uid://ba3gddou2ssng" path="res://scripts/usagi.gd" id="1_v47a4"]
-[ext_resource type="Texture2D" uid="uid://bxjf2fvkoganp" path="res://Assets/sprites/usagi_idle.png" id="2_mqe8a"]
+[ext_resource type="Texture2D" uid="uid://bxjf2fvkoganp" path="res://assets/sprites/usagi_idle.png" id="2_mqe8a"]
 [ext_resource type="AudioStream" uid="uid://cdedc1xludbco" path="res://assets/sfx/jump.wav" id="3_mqe8a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x88r4"]
@@ -54,9 +54,6 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjonu"]
-size = Vector2(20, 28)
-
 [node name="Usagi" type="CharacterBody2D" unique_id=585553492]
 z_index = 1
 scale = Vector2(2, 2)
@@ -69,9 +66,8 @@ animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.914899
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=764286497]
-position = Vector2(0, 2)
-shape = SubResource("RectangleShape2D_pjonu")
-
 [node name="jump_sfx" type="AudioStreamPlayer2D" parent="." unique_id=82124743]
 stream = ExtResource("3_mqe8a")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2077366251]
+polygon = PackedVector2Array(-7, -8, -4, -8, -4, -11, -3, -11, -3, -12, -1, -12, -1, -11, 1, -11, 1, -12, 3, -12, 3, -11, 4, -11, 4, -8, 7, -8, 7, -7, 8, -7, 8, -6, 9, -6, 9, -4, 10, -4, 10, 3, 9, 3, 9, 4, 8, 4, 8, 5, 7, 5, 7, 6, 8, 6, 8, 7, 9, 7, 9, 11, 8, 11, 8, 12, 7, 12, 7, 15, 6, 15, 6, 16, 3, 16, 3, 15, 2, 15, 2, 14, -2, 14, -2, 15, -3, 15, -3, 16, -6, 16, -6, 15, -7, 15, -7, 12, -8, 12, -8, 11, -9, 11, -9, 7, -8, 7, -8, 6, -7, 6, -7, 5, -8, 5, -8, 4, -9, 4, -9, 3, -10, 3, -10, -4, -9, -4, -9, -6, -8, -6, -8, -7, -7, -7)
