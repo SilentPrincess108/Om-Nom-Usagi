@@ -10,8 +10,9 @@
 [node name="Main" type="Node" unique_id=184715211]
 script = ExtResource("1_jyhfs")
 
-[node name="bgmusic" type="AudioStreamPlayer2D" parent="." unique_id=527113715]
+[node name="bgmusic" type="AudioStreamPlayer" parent="." unique_id=78626305]
 stream = ExtResource("2_tefeu")
+volume_db = -30.0
 autoplay = true
 
 [node name="Background" parent="." unique_id=1663038355 instance=ExtResource("1_sugp2")]

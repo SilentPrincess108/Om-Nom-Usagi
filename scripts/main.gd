@@ -12,7 +12,7 @@ var last_obs
 @onready var camera: Camera2D = $Camera2D
 @onready var ground: StaticBody2D = $Ground
 @onready var hud: CanvasLayer = $HUD
-@onready var bgmusic: AudioStreamPlayer2D = $bgmusic
+@onready var bgmusic: AudioStreamPlayer = $bgmusic
 
 
 const USAGI_START_POS := Vector2i(165, 461)
